@@ -1,4 +1,4 @@
-<h1>Exercicios basicos I</h1>
+<h1>Java Basic Exercises [1 to 150 exercises]</h1>
 
 1. Write a Java program to print 'Hello' on screen and then print your name on a separate line. 
 Expected Output :
