@@ -1,5 +1,4 @@
-<h1>Java Basic Exercises [151 to 250 exercises with solution]</h1>
-[An editor is available at the bottom of the page to write and execute the scripts.]
+<h1>Java Basic Exercises [151 to 250 exercises]</h1>
 
 151. Write a Java program to find the value of specified expression. 
 a) 101 + 0) / 3
