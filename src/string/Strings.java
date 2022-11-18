@@ -42,4 +42,37 @@ public class Strings {
                 n2, n1 % n2);
     }
 
+    public static String ex007(int n) {
+        /*
+         * Write a Java program that takes a number as input and prints its
+         * multiplication table upto 10.
+         */
+        String result = "";
+        for (int x = 0; x <= 10; x++) {
+            int r = n * x;
+            result += String.format("%d X %d = %d\n", n, x, r);
+        }
+        return result;
+    }
+
+    public static String ex008() {
+        /*Write a Java program to display the following pattern */
+        String r = """
+                   J    a   v     v  a
+                   J   a a   v   v  a a
+                J  J  aaaaa   V V  aaaaa
+                 JJ  a     a   V  a     a""";
+        return r;
+    }
+
+    public static double ex009(double n) {
+        /* Write a Java program to compute the specified expressions and print the output */
+        return n;
+    }
+
+    public static double ex010(double n){
+        /*Write a Java program to compute a specified formula */
+        return n;
+    }
+
 }
