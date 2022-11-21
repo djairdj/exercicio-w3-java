@@ -1,6 +1,5 @@
 package string;
 
-
 public class Strings {
     public static String ex001(String name) {
         /*
@@ -83,7 +82,7 @@ public class Strings {
         return Math.PI * (raio * raio);
     }
 
-    private static double areaRetangulo(double lado1, double lado2){
+    private static double areaRetangulo(double lado1, double lado2) {
         return lado1 * lado2;
     }
 
@@ -91,7 +90,7 @@ public class Strings {
         return Math.PI * 2 * raio;
     }
 
-    private static double perimetroRetangulo(double lado1, double lado2){
+    private static double perimetroRetangulo(double lado1, double lado2) {
         return 2 * (lado1 + lado2);
     }
 
@@ -122,50 +121,53 @@ public class Strings {
         return ar + per;
     }
 
-    public static String ex014(){
+    public static String ex014() {
+        /* Write a Java program to print an American flag on the screen */
         return """
-                * * * * * * ==================================                          
-                 * * * * *  ==================================                          
-                * * * * * * ==================================                          
-                 * * * * *  ==================================                          
-                * * * * * * ==================================                          
-                 * * * * *  ==================================                          
-                * * * * * * ==================================                          
-                 * * * * *  ==================================                          
-                * * * * * * ==================================                          
-                ==============================================                          
-                ==============================================                          
-                ==============================================                          
-                ==============================================                          
-                ==============================================                          
+                * * * * * * ==================================
+                 * * * * *  ==================================
+                * * * * * * ==================================
+                 * * * * *  ==================================
+                * * * * * * ==================================
+                 * * * * *  ==================================
+                * * * * * * ==================================
+                 * * * * *  ==================================
+                * * * * * * ==================================
+                ==============================================
+                ==============================================
+                ==============================================
+                ==============================================
+                ==============================================
                 ==============================================
                 """;
     }
 
-    public static String ex015(int n1, int n2){
+    public static String ex015(int n1, int n2) {
+        /* Write a Java program to swap two variables */
         String f = "";
-        f += "n1 vale "+ n1;
-        f += "\nn2 vale "+ n2;
-        n1 = n2+n1;
+        f += "n1 vale " + n1;
+        f += "\nn2 vale " + n2;
+        n1 = n2 + n1;
         n2 = n1 - n2;
         n1 -= n2;
-        f += "\nn1 vale "+ n1;
-        f += "\nn2 vale "+ n2;
+        f += "\nn1 vale " + n1;
+        f += "\nn2 vale " + n2;
         return f;
     }
 
-    public static String ex016(){
+    public static String ex016() {
+        /* Write a Java program to print a face */
         return """
-             +""\"""+                                                 
-            [| o o |]                                                
-             |  ^  |                                                 
-             | '-' |                                                 
-             +-----+
-                """;
+                 +""\"""+
+                [| o o |]
+                 |  ^  |
+                 | '-' |
+                 +-----+
+                    """;
     }
-    
-    public static String ex017(String bin1, String bin2){
-        /*Write a Java program to add two binary numbers */
+
+    public static String ex017(String bin1, String bin2) {
+        /* Write a Java program to add two binary numbers */
         for (int i = 0; i < bin1.length(); i++) {
             if (bin1.charAt(i) != '0' && bin1.charAt(i) != '1') {
                 return "primeiro argumento não binario";
@@ -179,9 +181,10 @@ public class Strings {
 
         String r = "Sum of two binary numbers: ";
         int soma = Integer.parseInt(bin1, 2) + Integer.parseInt(bin2, 2);
-        String b = Integer.toBinaryString(soma);  
+        String b = Integer.toBinaryString(soma);
         return r + b;
     }
+
     public static void main(String[] args) {
         System.out.println(ex017("10", "11"));
     }
