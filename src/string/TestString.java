@@ -214,6 +214,35 @@ public class TestString {
         String b2 = "11";
         String expected = "Sum of two binary numbers: 101";
         assertEquals(expected, Strings.ex017(b1, b2));
+        // Other test:
+        b1 = "102";
+        b2 = "1";
+        expected = "primeiro argumento não binario";
+        assertEquals(expected, Strings.ex017(b1, b2));
+        // Other test:
+        b1 = "10";
+        b2 = "12";
+        expected = "segundo argumento não binario";
+        assertEquals(expected, Strings.ex017(b1, b2));
     }
 
+    @Test
+    public void ex018Test(){
+        /* Write a Java program to multiply two binary numbers. */
+        String expected = "Product of two binary numbers: 110";
+        String b1 = "10";
+        String b2 = "11";
+        assertEquals(expected, Strings.ex018(b1, b2));
+        // Other test:
+        b1 = "102";
+        b2 = "1";
+        expected = "primeiro argumento não binario";
+        assertEquals(expected, Strings.ex017(b1, b2));
+        // Other test:
+        b1 = "10";
+        b2 = "12";
+        expected = "segundo argumento não binario";
+        assertEquals(expected, Strings.ex018(b1, b2));
+
+    }
 }
