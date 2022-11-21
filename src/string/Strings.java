@@ -166,17 +166,29 @@ public class Strings {
                     """;
     }
 
-    public static String ex017(String bin1, String bin2) {
-        /* Write a Java program to add two binary numbers */
-        for (int i = 0; i < bin1.length(); i++) {
-            if (bin1.charAt(i) != '0' && bin1.charAt(i) != '1') {
-                return "primeiro argumento não binario";
+    /**
+     * Esse método julga se uma String é composta por apenas '0' e/ou '1'
+     * 
+     * @param bin String informada para análise se ela está em formato binário
+     * @return True caso a String informada seja composta por elementos binários,
+     *         False caso contrário.
+     */
+    public static boolean isBinary(String bin) {
+        for (int i = 0; i < bin.length(); i++) {
+            if (bin.charAt(i) != '0' && bin.charAt(i) != '1') {
+                return false;
             }
         }
-        for (int i = 0; i < bin2.length(); i++) {
-            if (bin2.charAt(i) != '0' && bin2.charAt(i) != '1') {
-                return "segundo argumento não binaro";
-            }
+        return true;
+    }
+
+    public static String ex017(String bin1, String bin2) {
+        /* Write a Java program to add two binary numbers */
+        if (!isBinary(bin1)) {
+            return "primeiro argumento não binario";
+        }
+        if (!isBinary(bin2)) {
+            return "segundo argumento não binario";
         }
 
         String r = "Sum of two binary numbers: ";
@@ -185,8 +197,19 @@ public class Strings {
         return r + b;
     }
 
-    public static void main(String[] args) {
-        System.out.println(ex017("10", "11"));
+    public static String ex018(String bin1, String bin2) {
+        /* Write a Java program to multiply two binary numbers. */
+        if (!isBinary(bin1)) {
+            return "primeiro argumento não binario";
+        }
+        if (!isBinary(bin2)) {
+            return "segundo argumento não binario";
+        }
+
+        String r = "Product of two binary numbers: ";
+        int mult = Integer.parseInt(bin1, 2) * Integer.parseInt(bin2, 2);
+        String b = Integer.toBinaryString(mult);
+        return r + b;
     }
 
 }
