@@ -3,7 +3,7 @@ package string;
 public class Strings {
     public static String ex001(String name) {
         /*
-         * Write a Java program to print 'Hello' on screen and then print your name on a
+         * Write a Java program to print 'Hello' on screen and then print some name on a
          * separate line.
          */
         return "Hello\n" + name;
@@ -184,12 +184,8 @@ public class Strings {
 
     public static String ex017(String bin1, String bin2) {
         /* Write a Java program to add two binary numbers */
-        if (!isBinary(bin1)) {
-            return "primeiro argumento não binario";
-        }
-        if (!isBinary(bin2)) {
-            return "segundo argumento não binario";
-        }
+        if (!isBinary(bin1)) return "primeiro argumento não binario";
+        if (!isBinary(bin2)) return "segundo argumento não binario";
 
         String r = "Sum of two binary numbers: ";
         int soma = Integer.parseInt(bin1, 2) + Integer.parseInt(bin2, 2);
@@ -199,17 +195,23 @@ public class Strings {
 
     public static String ex018(String bin1, String bin2) {
         /* Write a Java program to multiply two binary numbers. */
-        if (!isBinary(bin1)) {
-            return "primeiro argumento não binario";
-        }
-        if (!isBinary(bin2)) {
-            return "segundo argumento não binario";
-        }
+        if (!isBinary(bin1)) return "primeiro argumento não binario";
+        if (!isBinary(bin2)) return "segundo argumento não binario";
 
         String r = "Product of two binary numbers: ";
         int mult = Integer.parseInt(bin1, 2) * Integer.parseInt(bin2, 2);
         String b = Integer.toBinaryString(mult);
         return r + b;
+    }
+
+    public static String ex019(int dec){
+        /* Write a Java program to convert a decimal number to binary number. */        
+        return "Binary number is: " + Integer.toBinaryString(dec);
+    }
+
+    public static String ex020(int dec){
+        /* Write a Java program to convert a decimal number to hexadecimal number. */
+        return "Hexadecimal number is : " + Integer.toHexString(dec).toUpperCase();
     }
 
 }

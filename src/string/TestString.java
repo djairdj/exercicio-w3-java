@@ -11,6 +11,10 @@ import org.junit.jupiter.api.Assertions;
 public class TestString {
     @Test
     public void ex001Test() {
+        /*
+         * Write a Java program to print 'Hello' on screen and then print some name on a
+         * separate line.
+         */
         String nome = "Alexandra Abramov";
         String expected = "Hello\nAlexandra Abramov";
         Assertions.assertEquals(expected, Strings.ex001(nome));
@@ -245,4 +249,20 @@ public class TestString {
         assertEquals(expected, Strings.ex018(b1, b2));
 
     }
+
+    @Test
+    public void ex019Test(){
+        int n = 5;
+        String expected = "Binary number is: 101";
+        assertEquals(expected, Strings.ex019(n));
+    }
+
+    @Test
+    public void ex020(){        
+        /* Write a Java program to convert a decimal number to hexadecimal number. */
+        int n = 15;
+        String expectet = "Hexadecimal number is : F";
+        assertEquals(expectet, Strings.ex020(n));
+    }
+
 }
