@@ -258,7 +258,7 @@ public class TestString {
     }
 
     @Test
-    public void ex020(){        
+    public void ex020Test(){        
         /* Write a Java program to convert a decimal number to hexadecimal number. */
         int n = 15;
         String expectet = "Hexadecimal number is : F";
