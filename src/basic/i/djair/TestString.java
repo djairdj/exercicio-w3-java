@@ -267,7 +267,7 @@ public class TestString {
     }
 
     @Test
-    public void ex021test() {
+    public void ex021Test() {
         /* Write a Java program to convert a decimal number to octal number. */
         int dec = 15;
         String expected = "Octal number is: 17";
@@ -275,7 +275,7 @@ public class TestString {
     }
 
     @Test
-    public void ex022test() {
+    public void ex022Test() {
         /* Write a Java program to convert a binary number to decimal number. */
         String b = "100";
         String expected = "Decimal number is: 4";
@@ -287,7 +287,7 @@ public class TestString {
     }
 
     @Test
-    public void ex023test() {
+    public void ex023Test() {
         /* Write a Java program to convert a binary number to hexadecimal number. */
         String b = "1101";
         String expected = "HexaDecimal value: D";
@@ -299,7 +299,7 @@ public class TestString {
     }
 
     @Test
-    public void ex024test() {
+    public void ex024Test() {
         /* Write a Java program to convert a binary number to a Octal number. */
         String b = "111";
         String expected = "Octal number: 7";
@@ -311,7 +311,7 @@ public class TestString {
     }
 
     @Test
-    public void ex025test() {
+    public void ex025Test() {
         /* Write a Java program to convert a octal number to a decimal number. */
         String oct = "10";
         String expected = "Equivalent decimal number: 8";
@@ -323,7 +323,7 @@ public class TestString {
     }
 
     @Test
-    public void ex026test() {
+    public void ex026Test() {
         /* Write a Java program to convert a octal number to a binary number. */
         String oct = "7";
         String expected = "Equivalent binary number: 111";
@@ -335,7 +335,7 @@ public class TestString {
     }
 
     @Test
-    public void ex027test() {
+    public void ex027Test() {
         /* Write a Java program to convert a octal number to a hexadecimal number. */
         String oct = "100";
         String expected = "Equivalent hexadecimal number: 40";
@@ -347,7 +347,7 @@ public class TestString {
     }
 
     @Test
-    public void ex028test() {
+    public void ex028Test() {
         /* Write a Java program to convert a hexadecimal to a decimal number. */
         String ex = "25";
         String expected = "Equivalent decimal number is: 37";
@@ -359,7 +359,7 @@ public class TestString {
     }
 
     @Test
-    public void ex029test() {
+    public void ex029Test() {
         /* Write a Java program to convert a hexadecimal to a binary number. */
         String ex = "37";
         String expected = "Equivalent Binary Number is: 110111";
@@ -371,7 +371,7 @@ public class TestString {
     }
 
     @Test
-    public void ex030test() {
+    public void ex030Test() {
         /* Write a Java program to convert a hexadecimal to a octal number. */
         String ex = "40";
         String expected = "Equivalent of octal number is: 100";
