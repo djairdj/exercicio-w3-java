@@ -1,4 +1,4 @@
-package string;
+package basic.i.djair;
 
 public class Strings {
     public static String ex001(String name) {
