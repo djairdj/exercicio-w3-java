@@ -1,8 +1,12 @@
-package collections;
+package collections.rodi38;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 
-public class Ex010 {
+/*
+Write a Java program to sort a given array list
+ */
+public class Ex008 {
     public static void main(String[] args) {
         ArrayList<String> cores = new ArrayList<>();
         cores.add("Red");
@@ -10,10 +14,8 @@ public class Ex010 {
         cores.add("Green");
         cores.add("Yellow");
         cores.add("Pink");
-        System.out.println("Array original: " + cores);
-        Collections.shuffle(cores);
-        System.out.println("Array embaralhado: " + cores);
-
-
+        System.out.println(cores);
+        Collections.sort(cores);
+        System.out.println(cores);
     }
 }

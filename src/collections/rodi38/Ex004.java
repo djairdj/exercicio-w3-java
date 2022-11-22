@@ -1,4 +1,4 @@
-package collections;
+package collections.rodi38;
 import java.util.ArrayList;
 /*
  Write a Java program to retrieve an element (at a specified index) from a given array list.
